@@ -2,7 +2,7 @@ sylius_installer:
     resource: @SyliusInstallerBundle/Resources/config/routing.yml
 
 sylius_web:
-    resource: @SyliusWebBundle/Resources/config/routing/main.yml
+    resource: @ViktisWebBundle/Resources/config/routing/main.yml
 
 payum_capture:
     resource: "@PayumBundle/Resources/config/routing/capture.xml"

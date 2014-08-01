@@ -24,7 +24,7 @@ class AppKernel extends Kernel
     public function registerBundles()
     {
         $bundles = array(
-            // Put here your own bundles
+            new Viktis\Bundle\WebBundle\ViktisWebBundle(),
         );
 
         return array_merge(parent::registerBundles(), $bundles);
