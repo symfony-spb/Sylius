@@ -1,0 +1,5 @@
+# Form field labels
+form:
+    email: "Email"
+    password: "Пароль"
+    password_confirmation: "Подтвердите пароль"
