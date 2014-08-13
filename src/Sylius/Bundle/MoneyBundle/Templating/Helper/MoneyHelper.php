@@ -35,7 +35,7 @@ class MoneyHelper extends Helper
     /**
      * @var string
      */
-    private $pattern = '¤#,##0.00;-¤#,##0.00';
+    private $pattern = '#,##0.00 ¤;-#,##0.00 ¤';
 
     public function __construct(CurrencyContextInterface $currencyContext, CurrencyConverterInterface $converter, $locale = null)
     {

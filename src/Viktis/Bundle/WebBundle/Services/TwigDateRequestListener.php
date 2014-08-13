@@ -1,7 +1,6 @@
 <?php
 namespace Viktis\Bundle\WebBundle\Services;
 
-use Symfony\Component\HttpKernel\HttpKernelInterface;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 
 class TwigDateRequestListener

@@ -3,3 +3,13 @@ form:
     email: "Email"
     password: "Пароль"
     password_confirmation: "Подтвердите пароль"
+
+registration.register_header: "Регистрация"
+
+security.login.email: "Email:"
+security.login.forgot_password: "Забыли пароль?"
+security.login.header: "Вход на сайт"
+security.login.info: "Введите логин и пароль"
+security.login.no_account: "Регистрация"
+
+

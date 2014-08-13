@@ -1,1 +1,85 @@
+sylius.account.address.action.delete: "Удалить"
+sylius.account.address.create: "Новый адрес"
+sylius.account.address.default.billing: "Адрес для выставления счета по умолчанию"
+sylius.account.address.default.no_billing: "Адрес для выставления счета не задан"
+sylius.account.address.default.no_shipping: "Адрес доставки не задан"
+sylius.account.address.default.shipping: "Адрес доставки по умолчанию"
+sylius.account.address.empty: "Адрес отсутствует"
+sylius.account.address.list: "Адреса"
+
+sylius.account.title: 'Личный кабинет'
+
+sylius.backend.menu.sidebar.attributes: "Настройка атрибутов"
+sylius.backend.statistics: "Статистика"
+
+sylius.breadcrumb.attribute.index: "Список атрибутов"
 sylius.breadcrumb.dashboard: "Панель управления"
+sylius.breadcrumb.payment: "Платежи"
+sylius.breadcrumb.tax_rate.index: "Налоги"
+sylius.breadcrumb.zone.index: "Список зон"
+
+sylius.form.attribute.name: "Внутренее имя"
+sylius.form.attribute.presentation: "Представление"
+
+sylius.form.frontend.password.title: 'Изменение пароля'
+
+sylius.form.payment.state: "Статус платежа"
+sylius.form.payment.state.cancelled: "Отменен"
+sylius.form.payment.state.refunded: "Возврат"
+
+sylius.form.priceable.calculator: "Калькулятор цен"
+sylius.form.product.name: "Название"
+sylius.form.product.description: "Описание"
+sylius.form.product_filter.sku: "Артикул"
+sylius.form.product_prototype.name: "Название прототипа"
+sylius.form.product_prototype.options: "Опции"
+sylius.form.product_prototype.attributes: "Атрибуты"
+sylius.form.product_variant.available_on: "Доступен с"
+sylius.form.promotion.exclusive: "Эксклюзив"
+sylius.form.variant.sku: "Артикул"
+
+sylius.history: "История"
+
+sylius.newest: 'Новинки'
+
+sylius.payment.show_header: "История платежа"
+
+sylius.payment.state: "Статус"
+sylius.payment.state.cancelled: "Отменен"
+sylius.payment.state.refunded: "Возврат"
+
+sylius.prototype.attributes: "Атрибуты"
+
+sylius.logo: "Бинидини"
+
+sylius.product.attributes: "Характеристики"
+sylius.product.add_attribute: "Добавить атрибут"
+sylius.product.contain_variants: "Есть варианты"
+sylius.product.no_sku: "Нет артикула"
+sylius.product.remove_attribute: "Удалить атрибут"
+sylius.product.sku: "Артикул"
+
+sylius.product.tabs.attributes: "Атрибуты"
+sylius.product_attribute.create: "Создать атрибут"
+sylius.product_attribute.create_header: "Новый атрибут"
+sylius.product_attribute.index_header: "Атрибуты товаров"
+sylius.product_attribute.manage: "Настройка атрибутов"
+sylius.product_attribute.name: "Название атрибута"
+sylius.product_attribute.no_results: "Атрибутов нет"
+sylius.product_attribute.presentation: "Представление атрибута"
+sylius.product_attribute.type: "Тип атрибута"
+sylius.product_attribute.updated_at: "Последнее обновление"
+
+sylius.product_option.create: "Создать опцию"
+sylius.product_option.create_header: "Новая опция"
+sylius.product_option.index_header: "Опции товаров"
+sylius.product_option.manage: "Настройка опций"
+sylius.product_option.no_results: "Опций нет"
+
+sylius.shipment.no_results: "Отправок нет"
+sylius.shipment.sku: "Артикул"
+
+sylius.tax_rate.category: "Налоговая категория"
+sylius.tax_rate.zone: "Налоговая зона"
+
+*.sku: "Артикул"

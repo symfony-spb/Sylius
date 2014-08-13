@@ -63,7 +63,7 @@
                 {{ render(url('sylius_partial_product_latest', {'limit': 5, 'template': 'SyliusWebBundle:Frontend/Product:latestSidebar.html.twig'})) }}
                 {{ sonata_block_render({'name': '/cms/blocks/contact'}) }}
 
-                    <h2>Links</h2>
+                    <h2>Информация</h2>
                     <ul>
                     {% for child in cmf_children(cmf_find('/cms/pages')) %}
                         <li>
@@ -100,7 +100,7 @@
         {% block footer %}
             <div class="footer">
                 <p class="text-muted">
-                    &copy; Sylius, 2011 - {{ 'now'|date('Y') }}.
+                    &copy; Binidini, {{ 'now'|date('Y') }}.
                 </p>
                 {{ knp_menu_render('sylius.frontend.social', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
             </div>
