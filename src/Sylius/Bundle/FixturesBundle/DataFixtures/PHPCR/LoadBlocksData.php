@@ -34,8 +34,8 @@ class LoadBlocksData extends DataFixture
         $contactBlock = $repository->createNew();
         $contactBlock->setParentDocument($parent);
         $contactBlock->setName('contact');
-        $contactBlock->setTitle('Contact us');
-        $contactBlock->setBody('<p>Call us '.$this->faker->phoneNumber.'!</p><p>'.$this->faker->paragraph.'</p>');
+        $contactBlock->setTitle('Контакты');
+        $contactBlock->setBody('г. Санкт-Петербург,<br> Пироговская набережная, 21А,<br> БЦ "НОБЕЛЬ", офис 68<br><br> Тел.:<b> (812)715-52-53</b><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b> (812)715-23-23</b><br>Тел.:<b> (812)329-01-88</b>(факс)<br><br>E-mail: <a href="mailto:contact@binidini.ru">contact@binidini.ru</a>');
 
         $manager->persist($contactBlock);
 

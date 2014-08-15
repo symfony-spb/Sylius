@@ -39,7 +39,13 @@
             <div class="currency-menu masthead pull-right">
                 {{ knp_menu_render('sylius.frontend.currency', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
             </div>
-            <h1 class="logo"><a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.logo'|trans }}"><span>{{ 'sylius.logo'|trans }}</span></a></h1>
+            <h1 class="logo">
+                <a href="{{ path('sylius_homepage') }}" title="{{ 'sylius.logo'|trans }}">
+                    <font color="#ff0000">Б</font><font color="#ffc000">и</font><font color="#ffff00">н</font><font color="#3fff00">и</font><font color="#00ff00">д</font><font color="#00ffc0">и</font><font color="#00ffff">н</font><font color="#00c0ff">и</font>
+                    <small>магазин обоев</small>
+                </a>
+            </h1>
+
         {% endblock %}
 
         {% block flashes %}
@@ -58,7 +64,7 @@
         <div class="row">
             <div class="col-md-3" id="sidebar">
                 {% block sidebar %}
-                <h4>{{ 'sylius.shop_by'|trans }}</h4><br>
+                <h4>{{ 'sylius.shop_by'|trans }}</h4>
                 {{ knp_menu_render('sylius.frontend.taxonomies', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
                 {{ render(url('sylius_partial_product_latest', {'limit': 5, 'template': 'SyliusWebBundle:Frontend/Product:latestSidebar.html.twig'})) }}
                 {{ sonata_block_render({'name': '/cms/blocks/contact'}) }}
@@ -100,7 +106,7 @@
         {% block footer %}
             <div class="footer">
                 <p class="text-muted">
-                    &copy; Binidini, {{ 'now'|date('Y') }}.
+                    &copy; Бинидини, {{ 'now'|date('Y') }}.
                 </p>
                 {{ knp_menu_render('sylius.frontend.social', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
             </div>

@@ -37,31 +37,31 @@ class LoadPagesData extends DataFixture
         $parent = $manager->find(null, $basepath);
         $repository = $this->container->get('sylius.repository.page');
 
-        // Terms of service.
+        // Return Policy
         $route = new Route();
-        $route->setPosition($routeRoot, 'terms-of-service');
+        $route->setPosition($routeRoot, 'return-policy');
         $manager->persist($route);
 
         $content = $repository->createNew();
-        $content->setTitle('Terms of Service');
-        $content->setBody($this->faker->text(350));
+        $content->setTitle('Правила возврата');
+        $content->setBody($this->faker->text(500));
         $content->addRoute($route);
         $content->setParent($parent);
-        $content->setName('terms-of-service');
+        $content->setName('return-policy');
 
         $manager->persist($content);
 
-        // Contact.
+        // Discounts
         $route = new Route();
-        $route->setPosition($routeRoot, 'about');
+        $route->setPosition($routeRoot, 'discounts');
         $manager->persist($route);
 
         $content = $repository->createNew();
-        $content->setTitle('About us');
-        $content->setBody($this->faker->text(300));
+        $content->setTitle('Наши скидки');
+        $content->setBody($this->faker->text(500));
         $content->addRoute($route);
         $content->setParent($parent);
-        $content->setName('about-us');
+        $content->setName('dicsounts');
 
         $manager->persist($content);
 
