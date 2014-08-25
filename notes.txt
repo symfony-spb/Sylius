@@ -1,5 +1,7 @@
 1.
-Sylius\Bundle\MoneyBundle\Templating\Helper\MoneyHelper.php
+src\Sylius\Bundle\MoneyBundle\Templating\Helper\MoneyHelper.php
 38:     private $pattern = '¤#,##0.00;-¤#,##0.00'; => private $pattern = '#,##0.00 ¤;-#,##0.00 ¤';
 2.
-Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php - changed
+src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php - changed
+3.
+src/Sylius/Bundle/WebBundle/Menu/FrontendMenuBuilder.php

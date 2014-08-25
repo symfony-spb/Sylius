@@ -216,13 +216,14 @@ class FrontendMenuBuilder extends MenuBuilder
     {
         $menu = $this->factory->createItem('root', array(
             'childrenAttributes' => array(
-                'class' => 'nav'
+                'class' => 'nav',
             )
         ));
 
         $childOptions = array(
-            'childrenAttributes' => array('class' => 'nav nav-list'),
-            'labelAttributes'    => array('class' => 'nav-header'),
+            //'childrenAttributes' => array('class' => 'nav nav-list'),
+            //'labelAttributes'    => array('class' => 'nav-header'),
+            'labelAttributes' => array('icon' => 'icon-folder-open')
         );
 
         $taxonomies = $this->taxonomyRepository->findAll();
@@ -243,10 +244,25 @@ class FrontendMenuBuilder extends MenuBuilder
     private function createTaxonomiesMenuNode(ItemInterface $menu, TaxonInterface $taxon)
     {
         foreach ($taxon->getChildren() as $child) {
-            $childMenu = $menu->addChild($child->getName(), array(
-                'route'           => $child,
-                'labelAttributes' => array('icon' => 'icon-plus-sign')
-            ));
+
+            if ( $child->getChildren()->isEmpty() ) {
+                $childMenu = $menu->addChild($child->getName(), array(
+                    'route'           => $child,
+                    'labelAttributes' => array(
+                        //'icon' => 'icon-th',
+                        'iconOnly' => false
+                    )
+                ));
+            } else {
+                $childMenu = $menu->addChild($child->getName(), array(
+                    //'route'           => $child,
+                    'labelAttributes' => array(
+                        'icon' => 'icon-folder-open',
+                        'iconOnly' => false
+                    )
+                ));
+            }
+
             if ($child->getPath()) {
                 $childMenu->setLabelAttribute('data-image', $child->getPath());
             }

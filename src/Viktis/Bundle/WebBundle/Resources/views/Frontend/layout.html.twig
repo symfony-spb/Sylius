@@ -20,6 +20,7 @@
             {% stylesheets output='assets/compiled/frontend.css' filter='cssrewrite'
                 'bundles/syliusweb/css/frontend.css'
                 'bundles/syliusweb/css/blueimp-gallery.css'
+                'bundles/viktisweb/css/tree.css'
             %}
                 <link rel="stylesheet" href="{{ asset_url }}" type="text/css" />
             {% endstylesheets %}
@@ -62,10 +63,12 @@
         {% block main %}
         <hr>
         <div class="row">
-            <div class="col-md-3" id="sidebar">
+            <div class="col-md-3" id="#sidebar">
                 {% block sidebar %}
                 <h4>{{ 'sylius.shop_by'|trans }}</h4>
-                {{ knp_menu_render('sylius.frontend.taxonomies', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
+                <div  class="tree">
+                    {{ knp_menu_render('sylius.frontend.taxonomies', {'template': 'SyliusWebBundle:Frontend:menu.html.twig'}) }}
+                </div>
                 {{ render(url('sylius_partial_product_latest', {'limit': 5, 'template': 'SyliusWebBundle:Frontend/Product:latestSidebar.html.twig'})) }}
                 {{ sonata_block_render({'name': '/cms/blocks/contact'}) }}
 
@@ -121,6 +124,7 @@
             'bundles/syliusweb/js/jquery.blueimp-gallery.min.js'
             'bundles/syliusweb/js/confirm-modal.js'
             'bundles/syliusweb/js/frontend.js'
+            'bundles/viktisweb/js/tree.js'
         %}
             <script type="text/javascript" src="{{ asset_url }}"></script>
         {% endjavascripts %}
