@@ -49,6 +49,7 @@ sylius.payment.state.cancelled: "Отменен"
 sylius.payment.state.refunded: "Возврат"
 
 sylius.prototype.attributes: "Атрибуты"
+sylius.prototype.build: "Построить по прототипу"
 
 sylius.logo: "Бинидини"
 
